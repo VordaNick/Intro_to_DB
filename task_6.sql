@@ -19,9 +19,9 @@ def insert_multiple_customers():
             """
             
             customers_data = [
-                (2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness Ave.'),
-                (3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness Ave.'),
-                (4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness Ave.')
+                (2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness  Ave.'),
+                (3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness  Ave.'),
+                (4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness  Ave.')
             ]
             cursor.executemany(insert_query, customers_data)
             connection.commit()
