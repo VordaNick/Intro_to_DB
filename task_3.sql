@@ -11,6 +11,7 @@ def list_tables_in_database():
         )
         if connection.is_connected():
             cursor = connection.cursor()
+            cursor.execute("USE alx_book_store;")
             cursor.execute("SHOW TABLES;")
 
             print("Tables in the 'bookstore' database:")
