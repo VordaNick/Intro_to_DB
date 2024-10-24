@@ -3,7 +3,6 @@ from mysql.connector import Error
 
 def describe_books_table():
     try:
-        # Connect to the 'Toshiba' database
         connection = mysql.connector.connect(
             host='localhost',
             user='root',
@@ -28,8 +27,8 @@ def describe_books_table():
                 FROM 
                     INFORMATION_SCHEMA.COLUMNS 
                 WHERE 
-                    TABLE_SCHEMA = 'Toshiba' 
-                    AND TABLE_NAME = 'books';
+                    TABLE_SCHEMA = 'alx_book_store' 
+                    AND TABLE_NAME = 'Books';
             """
             cursor.execute(query)
             columns = cursor.fetchall()
