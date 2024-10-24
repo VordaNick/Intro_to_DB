@@ -19,7 +19,7 @@ def insert_customer():
                 INSERT INTO customer (customer_id, customer_name, email, address)
                 VALUES (%s, %s, %s, %s);
             """
-            customer_data = (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave')
+            customer_data = (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.')
             cursor.execute(insert_query, customer_data)
             connection.commit()
 
